@@ -1,0 +1,39 @@
+﻿@model List<HomeWork25.Models.Person>
+
+<table>
+    <thead class="table-danger">
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                LastName
+            </th>
+            <th>
+                FirstName
+            <th>
+                MiddleName
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr style="color:blue">
+            <td>
+                @item.Id
+            </td>
+            <td>
+                @item.LastName
+            </td>
+            <td>
+                @item.FirstName
+            </td>
+            <td>
+                @item.MiddleName
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
